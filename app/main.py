@@ -1,7 +1,7 @@
 from pathlib import Path
 from app.ocr import ocr_pdf, ocr_image
+from app.config import INPUT_FOLDER
 
-INPUT_FOLDER = r"C:\Users\Siddarth\Desktop\test_batch"
 OUTPUT_FOLDER = r"C:\Users\Siddarth\aiDocumentExtraction\output"
 POPPLER_PATH = r"C:\Users\Siddarth\aiDocumentExtraction\.venv\poppler_bin"
 
