@@ -1,7 +1,7 @@
-from typing import Optional, Generic, TypeVar
+from typing import Optional, Generic, TypeVar, Dict, Any
 from pydantic import BaseModel, Field
 from enum import Enum
-from datetime import date
+from datetime import date, datetime
 import copy
 
 BASE_FIELD_TEMPLATE = {
@@ -55,6 +55,14 @@ class InvoiceSchema(BaseModel):
     vendor_name: ExtractedField[str]
 
 
+class DocumentResultResponse(BaseModel):
+    id: int
+    document_id: int
+    extraction_json: Optional[Dict[str, Any]]
+    confidence_score: Optional[float]
+    validation_status: str
+    created_at: datetime
 
-
+    class Config:
+        orm_mode = True
 

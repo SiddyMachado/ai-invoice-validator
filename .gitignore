@@ -1,7 +1,11 @@
 .env
-.venv
+.venv/
 __pycache__/
 *.pyc
+*.db
+uploads/
 tests/
 output/
 .idea/
+.DS_Store
+*.log
