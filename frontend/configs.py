@@ -1,1 +1,1 @@
-API_URL = "ai-invoice-validator-production.up.railway.app"
+API_URL = "https://ai-invoice-validator-production.up.railway.app"
