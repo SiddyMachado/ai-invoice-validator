@@ -1,1 +1,1 @@
-API_URL = "http://127.0.0.1:8001"
+API_URL = "ai-invoice-validator-production.up.railway.app"

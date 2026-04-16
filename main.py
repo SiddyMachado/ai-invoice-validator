@@ -12,10 +12,7 @@ app = FastAPI(title="AI Document Reader API")
 # -------------------------------
 # CORS
 # -------------------------------
-origins = [
-    "http://localhost:8501",
-    "http://127.0.0.1:8501",
-]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
